@@ -1,0 +1,143 @@
+.adicionarTarefa-page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* Caixa branca*/
+.adicionarTarefa-page form {
+  max-width: 450px;
+  width: 100%;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+.adicionarTarefa-page form h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Labels*/
+.adicionarTarefa-page form p {
+  margin: 0.5rem 0 0.3rem 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.adicionarTarefa-page form input[type="text"],
+.adicionarTarefa-page form input[type="date"],
+.adicionarTarefa-page form input[type="time"] {
+  width: 100%;
+  max-width: 350px;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background: #f5f5f5;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+/* Foco */
+.adicionarTarefa-page form input[type="text"]:focus,
+.adicionarTarefa-page form input[type="date"]:focus,
+.adicionarTarefa-page form input[type="time"]:focus {
+  border-color: #234daf;
+  background: #fff;
+  outline: none;
+}
+
+/* Botão de submit */
+.adicionarTarefa-page form input[type="submit"] {
+  padding: 0.8rem 1.3rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  margin-top: 0.8rem;
+  background-color: #234daf;
+  color: #fff;
+}
+.adicionarTarefa-page form input[type="submit"]:hover {
+  background-color: rgb(7, 7, 93);
+}
+
+.adicionarTarefa-page button {
+  padding: 0.8rem 1.3rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  margin-top: 0.8rem;
+  background-color: #234daf;
+  color: #fff;
+}
+/* Responsivo */
+@media (max-width: 768px) {
+  .adicionarTarefa-page {
+    padding: 1.5rem 0;
+  }
+
+  .adicionarTarefa-page form {
+    margin: 0 1rem;
+    padding: 1.8rem;
+  }
+
+  .adicionarTarefa-page form h2 {
+    font-size: 1.4rem;
+  }
+
+  .adicionarTarefa-page form input[type="text"],
+  .adicionarTarefa-page form input[type="date"],
+  .adicionarTarefa-page form input[type="time"] {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .adicionarTarefa-page {
+    padding: 1rem 0;
+  }
+
+  .adicionarTarefa-page form {
+    margin: 0 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .adicionarTarefa-page form h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .adicionarTarefa-page form p {
+    font-size: 1rem;
+  }
+
+  .adicionarTarefa-page form input[type="text"],
+  .adicionarTarefa-page form input[type="date"],
+  .adicionarTarefa-page form input[type="time"] {
+    font-size: 0.95rem;
+  }
+
+  .adicionarTarefa-page form input[type="submit"],
+  .adicionarTarefa-page button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,177 @@
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #234daf #fff;
+}
+
+body {
+  font-family: "Noto Sans", Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  min-height: 100vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.baseform {
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.def-subtitle {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/*Form*/
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* label + input */
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+.form-label {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+/* Inputs */
+.form-input {
+  width: 100%;
+  max-width: 320px;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #234daf;
+  background: #fff;
+  outline: none;
+}
+
+/*Requisito de senha*/
+.password-information {
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 320px;
+}
+
+.password-requirements {
+  font-size: 0.9rem;
+}
+
+/* Botão de salvar*/
+.form-button {
+  margin-top: 1.4rem;
+  width: 100%;
+  max-width: 200px;
+  padding: 0.8rem 1.4rem;
+  background-color: #234daf;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.form-button:hover {
+  background-color: #0b1b64;
+}
+
+#reg-link {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    margin-top: 1.5rem;
+  }
+
+  .baseform {
+    margin: 1.5rem 1rem;
+    padding: 1.8rem;
+  }
+
+  #titAltSenha {
+    font-size: 1.4rem;
+  }
+
+  .form-input {
+    max-width: 100%;
+  }
+
+  .password-information {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .baseform {
+    margin: 1rem 0.5rem;
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  #titAltSenha {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .form-label {
+    font-size: 0.95rem;
+  }
+
+  .form-input {
+    font-size: 0.95rem;
+  }
+
+  .password-requirements {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+#titAltSenha {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}

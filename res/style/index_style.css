@@ -1,0 +1,421 @@
+.hero-section {
+  background: linear-gradient(to bottom, #e3edfa, #fff);
+  padding: 2.5rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-box {
+  background: #e3edfa;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  max-width: 400px;
+  min-width: 280px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+.hero-box h1 {
+  font-size: 1.7rem;
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+}
+.hero-box p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+.hero-download-btn {
+  display: inline-block;
+  background: #1976d2;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.hero-download-btn:hover {
+  background: #1251a3;
+}
+.hero-img {
+  object-fit: cover;
+  width: 40vw;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.info-section {
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+.section-desc {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.objetivos-section {
+  padding: 1.5rem 1rem 2rem 1rem;
+  background: #f7fafd;
+  text-align: center;
+}
+.objetivos-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+.objetivo-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+  padding: 1.2rem 1rem;
+  width: 100%;
+  max-width: 220px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.objetivo-icon {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+}
+.objetivo-icon img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+.objetivo-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+.objetivo-card p {
+  font-size: 0.98rem;
+  color: #444;
+}
+
+.oferece-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.oferece-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.oferece-item {
+  background: linear-gradient(to bottom, #e3edfa, #fff);
+  border-radius: 8px;
+  border: 2px solid #1976d2;
+  padding: 1.5rem 1.2rem;
+  width: 100%;
+  max-width: 240px;
+  min-height: 120px;
+  box-shadow: 0 2px 8px rgb(12, 77, 142);
+  font-size: 1rem;
+  font-style: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.doencas-section {
+  background: #e7f2ff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.doencas-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #1a3fa7;
+  font-weight: 700;
+}
+
+.doencas-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 1.5rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #1a3fa7 #e7f2ff;
+}
+
+.doenca-card {
+  background: #fff;
+  flex: 0 0 280px;
+  min-height: 360px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #1a3fa7;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  transition: transform 0.2s;
+}
+.doenca-card:hover {
+  transform: translateY(-4px);
+}
+
+.doenca-card h3 {
+  margin: 1.2rem 1rem 0.8rem 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #1a3fa7;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.doenca-card p {
+  margin-bottom: 0.8rem;
+  text-align: left;
+  line-height: 1.55;
+}
+.doenca-card ul {
+  padding-left: 1.2rem;
+  text-align: left;
+  margin-bottom: 0.8rem;
+}
+.doenca-card li {
+  margin-bottom: 0.45rem;
+  line-height: 1.5;
+}
+.doenca-card::-webkit-scrollbar {
+  width: 7px;
+}
+.doenca-card::-webkit-scrollbar-thumb {
+  background: #1a3fa746;
+  border-radius: 12px;
+}
+.doenca-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.artigos-section {
+  padding: 2rem 1rem 2.5rem 1rem;
+  background: #f5f8ff;
+  text-align: center;
+}
+.artigos-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+.artigo-card {
+  background: #ffffffec;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+  padding: 1.2rem 1rem;
+  width: 100%;
+  max-width: 240px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.artigo-card:hover {
+  transform: translateY(-2px);
+}
+.artigo-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.7rem;
+  background: #e3edfa;
+}
+.artigo-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+.artigo-card p {
+  font-size: 0.98rem;
+  color: #444;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .objetivos-cards,
+  .artigos-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oferece-section {
+    padding: 2rem 1rem;
+  }
+
+  .oferece-container {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .doencas-section {
+    padding: 2rem 0.5rem;
+  }
+
+  .doencas-container {
+    padding: 0 1rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  .doenca-card {
+    flex: 0 0 45%;
+    max-width: 100%;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .doencas-carrossel {
+    padding: 0 20px;
+  }
+  .doenca-card {
+    width: 100%;
+    padding: 1.2rem;
+  }
+  .seta-doencas-esq {
+    left: 5px;
+  }
+  .seta-doencas-dir {
+    right: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 1.5rem 0 1rem 0;
+  }
+
+  .hero-box {
+    padding: 1.5rem 1rem;
+    margin: 0 1rem;
+  }
+
+  .hero-box h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-box p {
+    font-size: 0.95rem;
+  }
+
+  .hero-download-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60vw;
+    max-width: 250px;
+  }
+
+  .info-section,
+  .objetivos-section,
+  .oferece-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .section-desc {
+    font-size: 1rem;
+  }
+
+  .objetivo-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .oferece-item {
+    max-width: 100%;
+    padding: 1.2rem 1rem;
+  }
+
+  .artigos-section {
+    padding: 1.5rem 0.5rem 2rem 0.5rem;
+  }
+
+  .artigo-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .doenca-card {
+    flex: 0 0 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-box {
+    min-width: auto;
+    width: calc(100% - 2rem);
+  }
+
+  .hero-box h1 {
+    font-size: 1.3rem;
+  }
+
+  .hero-box p {
+    font-size: 0.9rem;
+  }
+
+  .doencas-title {
+    font-size: 1.5rem;
+  }
+
+  .doenca-card h3 {
+    font-size: 1.1rem;
+  }
+}

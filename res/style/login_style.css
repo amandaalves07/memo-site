@@ -1,0 +1,120 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+/* Caixa branca*/
+.login-form-container {
+  max-width: 450px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+.login-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Containers de inputs */
+.login-input-container {
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.login-form-label {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+/* Inputs*/
+.login-form-input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.login-form-input:focus {
+  border-color: #234daf;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Botão de login */
+.login-form-button {
+  width: 60%;
+  padding: 0.9rem 0;
+  margin-top: 1.7rem;
+
+  background-color: #234daf;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.login-form-button:hover {
+  background-color: rgb(7, 7, 93);
+}
+
+/* Links */
+.reg-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.reg-link a {
+  color: #234daf;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.reg-link a:hover {
+  color: rgb(7, 7, 93);
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .login-form-container {
+    padding: 1.6rem;
+  }
+
+  .login-input-container {
+    max-width: 100%;
+  }
+
+  .login-form-button {
+    width: 100%;
+  }
+}

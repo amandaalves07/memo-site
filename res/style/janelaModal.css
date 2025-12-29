@@ -1,0 +1,195 @@
+.modal-janela {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.modal-conteudo {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  padding: 1.5rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Título do artigo */
+#modalTitulo {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Autores do artigo */
+#modalAutores {
+  margin: 0 0 0.8rem 0;
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+}
+
+.conteudo-horizontal {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.imagem-botao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 220px;
+  gap: 0.8rem;
+  box-sizing: border-box;
+}
+
+/* Resumo do artigo */
+#modalResumo {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  white-space: pre-wrap;
+  line-height: 1.4;
+  max-height: 300px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Imagem do artigo */
+#modalImagem {
+  width: 220px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+/* Link do DOI */
+#modalLink {
+  background-color: #1976d2;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  width: 100%;
+  transition: background-color 0.25s ease;
+  box-sizing: border-box;
+}
+#modalLink:hover,
+#modalLink:focus {
+  background-color: #1251a3;
+  outline: none;
+}
+
+.modal-fonte {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+  font-style: italic;
+  border-top: 1.5px solid #000;
+  padding-top: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .modal-conteudo {
+    width: 95%;
+    padding: 1.2rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  #modalTitulo {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-conteudo {
+    padding: 1rem;
+  }
+
+  #modalTitulo {
+    font-size: 1.2rem;
+  }
+
+  #modalAutores {
+    font-size: 0.9rem;
+  }
+
+  .conteudo-horizontal {
+    flex-direction: column;
+  }
+
+  .imagem-botao {
+    flex: none;
+    width: 100%;
+    align-items: center;
+  }
+
+  #modalImagem {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #modalLink {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #modalResumo {
+    max-height: none;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .fechar {
+    font-size: 28px;
+    top: 5px;
+    right: 10px;
+  }
+}
+
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: transparent;
+  z-index: 10;
+}
+.fechar:hover {
+  color: #bf1b1b;
+  background: #f0f0f0;
+}

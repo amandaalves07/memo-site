@@ -1,0 +1,219 @@
+/* Container seção artigos */
+.artigos-section {
+  padding: 2rem 1rem 3rem 1rem;
+  background: #f5f8ff;
+  position: relative;
+}
+
+/* Container dos cards do carrossel */
+.artigos-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  min-height: 260px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+}
+
+.artigos-cards.carrossel-pronto {
+  opacity: 1;
+  visibility: visible;
+}
+
+.artigo-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+  padding: 1.2rem 1rem;
+  width: 240px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.artigo-card:hover {
+  transform: translateY(-5px);
+}
+
+.artigo-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.7rem;
+  background: #e3edfa;
+}
+
+.artigo-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.artigo-card p {
+  font-size: 0.98rem;
+  color: #444;
+  text-align: center;
+}
+
+/* Setas de navegação */
+.seta-artigos {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #635f5f;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  transition: color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.seta-artigos:hover {
+  color: #464141;
+  background-color: #e0e0e0;
+}
+.seta-esquerda {
+  left: 80px;
+}
+.seta-direita {
+  right: 80px;
+}
+
+/* Bolinhas de navegação */
+.bolinhas-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1rem;
+  user-select: none;
+}
+.bolinha {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #6c6969;
+  cursor: pointer;
+  background: transparent;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.bolinha:hover {
+  transform: scale(1.2);
+}
+.bolinha.active {
+  background-color: #234daf;
+  border-color: #234daf;
+}
+
+/* Animação*/
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .artigos-section {
+    padding: 1.5rem 0.5rem 2.5rem 0.5rem;
+  }
+
+  .artigos-cards {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 0.5rem;
+  }
+
+  .artigo-card {
+    min-width: 200px;
+    width: 200px;
+  }
+
+  .seta-artigos {
+    font-size: 2rem;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .seta-esquerda {
+    left: 8px;
+  }
+
+  .seta-direita {
+    right: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .artigos-section {
+    padding: 1.5rem 0.5rem 2rem 0.5rem;
+  }
+
+  .artigos-cards {
+    gap: 1rem;
+  }
+
+  .artigo-card {
+    min-width: 180px;
+    width: 180px;
+    padding: 1rem 0.8rem;
+  }
+
+  .artigo-card h3 {
+    font-size: 1rem;
+  }
+
+  .artigo-card p {
+    font-size: 0.9rem;
+  }
+
+  .seta-artigos {
+    font-size: 1.8rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .bolinha {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .artigo-card {
+    min-width: 160px;
+    width: 160px;
+  }
+
+  .artigo-img {
+    height: 100px;
+  }
+
+  .seta-esquerda {
+    left: 5px;
+  }
+
+  .seta-direita {
+    right: 5px;
+  }
+}

@@ -1,0 +1,167 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fbfbfb;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Caixa branca*/
+.alteracaoSenhaForm {
+  background-color: #fff;
+  max-width: 650px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.def-subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: #222;
+}
+
+.container-input-alteracao {
+  margin-bottom: 1.25rem;
+}
+
+/* Label */
+.label-alteracao {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.input-email-alteracao {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  transition: border-color 0.25s ease;
+}
+
+.input-email-alteracao:focus {
+  outline: none;
+  border-color: #234daf;
+  background-color: #fff;
+}
+
+/* Mensagem de erro */
+.erro {
+  font-size: 0.85rem;
+  color: red;
+  margin-top: 0.3rem;
+}
+
+/* Botão de enviar */
+.botao-enviar-alteracao {
+  width: 40%;
+  background-color: #234daf;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.8rem 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  text-align: center;
+}
+
+.botao-enviar-alteracao:hover,
+.botao-enviar-alteracao:focus {
+  background-color: rgb(7, 7, 93);
+  outline: none;
+}
+
+#reg-link {
+  text-align: center;
+  margin-top: 1.3rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+#reg-link a {
+  color: #234daf;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+#reg-link a:hover,
+#reg-link a:focus {
+  color: rgb(7, 7, 93);
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    padding: 2rem 1rem;
+  }
+
+  .alteracaoSenhaForm {
+    padding: 2rem 2rem;
+  }
+
+  .def-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .botao-enviar-alteracao {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .alteracaoSenhaForm {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .def-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .label-alteracao {
+    font-size: 0.95rem;
+  }
+
+  .input-email-alteracao {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .botao-enviar-alteracao {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #reg-link {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,157 @@
+/* navbar */
+#navbar {
+  width: 100%;
+  height: 60pt;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 1% 2% 0% 2%;
+  background-color: darkblue;
+}
+
+#nav-home-icon {
+  width: 10%;
+  transition: background-color 0.5s;
+}
+
+.nav-links {
+  list-style: none;
+  color: #eee;
+}
+
+.nav-links li {
+  position: flex-end;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 15px 15px 25px 15px;
+  transition: background-color 0.5s;
+  text-decoration: none;
+}
+
+.nav-links a:visited {
+  text-decoration: none;
+  color: #eee;
+}
+
+.nav-links li:hover,
+#nav-home-icon:hover {
+  background-color: rgb(7, 7, 93);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Caixa branca*/
+.loginForm {
+  background-color: #fff;
+  max-width: 450px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Container dos inputs */
+.login-form-container {
+  margin-bottom: 1.5rem;
+}
+
+.login-input-container {
+  margin-bottom: 1.25rem;
+}
+
+/* Labels */
+.login-form-label {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs menores */
+.login-form-input {
+  width: 70%;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  transition: border-color 0.25s ease;
+}
+.login-form-input:focus {
+  outline: none;
+  border-color: #234daf;
+  background-color: #fff;
+}
+
+/* Botão de login */
+.login-form-button {
+  width: 40%;
+  background-color: #234daf;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.8rem 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1.5rem auto 0 auto;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.login-form-button:hover,
+.login-form-button:focus {
+  background-color: rgb(7, 7, 93);
+  outline: none;
+}
+
+.reg-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+.reg-link a {
+  color: #234daf;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.reg-link a:hover,
+.reg-link a:focus {
+  color: rgb(7, 7, 93);
+  text-decoration: underline;
+}
+
+/*  */
+#hero-section {
+  padding: 5%;
+  text-align: left;
+  display: block;
+}
+
+#hero-desc {
+  width: 50%;
+  padding: 10px;
+}
+
+#hero-img {
+  float: right;
+  width: 400px;
+  height: 400px;
+}
+
+.page-section {
+  padding: 5% 15% 5% 15%;
+}
